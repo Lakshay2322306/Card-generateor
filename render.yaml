@@ -1,0 +1,12 @@
+
+Configuration file for deployment on Render. Customize as needed.
+
+```yaml
+version: 1
+services:
+  - type: web
+    name: telegram-bot
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python bot.py"
+    plan: free
